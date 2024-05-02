@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Booklist from "./components/books/Booklist";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// function Greeting() {
+//   return <h2> My First Component</h2>;
+// }
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const Greeting = () => {
+//   return (
+//     <div>
+//       <h2>My First Component</h2>
+//       <Example />
+//     </div>
+//   );
+// };
+
+const rootId = document.getElementById("root");
+const root = ReactDOM.createRoot(rootId);
+root.render(<Booklist />);
